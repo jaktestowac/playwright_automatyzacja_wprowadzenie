@@ -1,4 +1,4 @@
-# Test Automation training form jaktestowac.pl
+# Test Automation training from jaktestowac.pl
 
 ## Links
 - course https://jaktestowac.pl/course/playwright-wprowadzenie/
