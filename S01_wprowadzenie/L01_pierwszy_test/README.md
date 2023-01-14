@@ -22,7 +22,7 @@ if link broken check https://jaktestowac.pl/lesson/pw1s01l01/
 ## Playwright Config modifications
 - config file `playwright.config.ts`
 - disable browsers, i.e. Firefox  
-    ```json
+    ```javascript
     // {
     //   name: 'firefox',
     //   use: {
