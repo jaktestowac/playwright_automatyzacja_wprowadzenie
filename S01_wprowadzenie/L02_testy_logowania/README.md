@@ -3,7 +3,7 @@
 ## Links
 - course https://jaktestowac.pl/course/playwright-wprowadzenie/
 - test site https://demo-bank.vercel.app/  
-if link is broken check https://jaktestowac.pl/lesson/pw1s01l02/
+if link broken check https://jaktestowac.pl/lesson/pw1s01l01/
 - code repository https://github.com/jaktestowac/playwright_automatyzacja_wprowadzenie
 
 ## Commands
@@ -19,6 +19,8 @@ if link is broken check https://jaktestowac.pl/lesson/pw1s01l02/
 `npx playwright test --headed`
 - view report  
 `npx playwright show-report`
+- cancelling Node process  
+hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 
 ## Playwright Config modifications
 - config file `playwright.config.ts`
@@ -35,5 +37,20 @@ if link is broken check https://jaktestowac.pl/lesson/pw1s01l02/
 ## Visual Studio Code
 - Preview: for README.md
 - Autosave: in File -> Auto Save
-- Timeline: file context menu
-- Formatting: editor -> context menu -> Format document
+- Timeline: file context menu -> Open Timeline
+- Formatting: editor -> context menu -> Format Document
+
+## Playwright snippets
+- test:
+    ```javascript
+    test('test description', async ({ page }) => {
+    
+    });
+    ```
+- describe:
+    ```javascript
+     describe('Group description', () => {
+
+     });
+    ```
+- running one test: `test.only`
