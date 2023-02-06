@@ -66,7 +66,7 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - `getByRole` i.e. `getByRole('button', { name: 'wykonaj' })`
 - `locator`, `css` selectors can be used i.e. `locator('#some-id')` for element with attribute `id="some-id"`
 
-## Chrmoe
+## Chrome
 - open DevTools <kbd>F12</kbd> or right click `Inspect`
 - get selector: right click on element -> Copy -> Copy selector
 - testing CSS selectors in Console: `$$('selector')`
