@@ -1,6 +1,7 @@
 # Playwright – Praktyczne wprowadzenie do testów automatycznych
 
-Poznaj z nami automatyzację za pomocą narzędzia Playwright🎭
+Poznaj z nami automatyzację GUI za pomocą narzędzia Playwright🎭 
+Stwórz swoje pierwsze testy End To End od zupełnych podstaw.
 
 ## O Repozytorium
 
