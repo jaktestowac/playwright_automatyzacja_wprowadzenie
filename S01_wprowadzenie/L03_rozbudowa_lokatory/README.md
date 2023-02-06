@@ -39,23 +39,35 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Autosave: in File -> Auto Save
 - Timeline: file context menu -> Open Timeline
 - Formatting: editor -> context menu -> Format Document
+- Searching: editor -> <kbd>CTRL</kbd> + <kbd>F</kbd>
+- Accept hint in editor: <kbd>Enter</kbd>
 
 ## Playwright snippets
+- import:
+    ```typescript
+    import { test, expect } from '@playwright/test';
+    ```
 - test:
-    ```javascript
+    ```typescript
     test('test description', async ({ page }) => {
     
     });
     ```
 - describe:
-    ```javascript
+    ```typescript
      test.describe('Group description', () => {
 
      });
     ```
-- running one test: `test.only`
+- running given test: `test.only`
 
 ## Locators
 - `getByTestId` i.e. `getByTestId('login-input')` for element with `data-testid="login-input"`
 - `getByRole` i.e. `getByRole('button', { name: 'wykonaj' })`
-- `css` i.e. `#some-id` for element with attribute `id="some-id"`
+- `locator`, `css` selectors can be used i.e. `locator('#some-id')` for element with attribute `id="some-id"`
+
+## Chrmoe
+- open DevTools <kbd>F12</kbd> or right click `Inspect`
+- get selector: right click on element -> Copy -> Copy selector
+- testing CSS selectors in Console: `$$('selector')`
+- use English version!
