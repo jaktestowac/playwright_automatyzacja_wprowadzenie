@@ -41,6 +41,8 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Formatting: editor -> context menu -> Format Document
 - Searching: editor -> <kbd>CTRL</kbd> + <kbd>F</kbd>
 - Accept hint in editor: <kbd>Enter</kbd>
+- Comment/Uncomment: <kbd>Ctrl</kbd> + <kbd>/</kbd>
+- Duplicate line: <kbd>Alt</kbd> + <kbd>Shift</kbd>
 
 ## Playwright snippets
 - import:
