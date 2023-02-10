@@ -43,6 +43,7 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Accept hint in editor: <kbd>Enter</kbd>
 - Comment/Uncomment: <kbd>Ctrl</kbd> + <kbd>/</kbd>
 - Duplicate line: <kbd>Alt</kbd> + <kbd>Shift</kbd>
+- Use more than one terminal: <kbd>+</kbd> button in TERMINAL
 
 ## Playwright snippets
 - import:
@@ -69,7 +70,7 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - `locator`, `css` selectors can be used i.e. `locator('#some-id')` for element with attribute `id="some-id"`
 
 ## Chrome
+- use English version!
 - open DevTools <kbd>F12</kbd> or right click `Inspect`
 - get selector: right click on element -> Copy -> Copy selector
 - testing CSS selectors in Console: `$$('selector')`
-- use English version!
