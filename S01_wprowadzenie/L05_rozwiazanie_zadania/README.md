@@ -67,7 +67,7 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 ## Locators
 - `getByTestId` i.e. `getByTestId('login-input')` for element with `data-testid="login-input"`
 - `getByRole` i.e. `getByRole('button', { name: 'wykonaj' })`
-- `locator`, `css` selectors can be used i.e. `locator('#some-id')` for element with attribute `id="some-id"`
+- `locator` i.e. `locator('#some-id')` for element with attribute `id="some-id"`, `#some-id` is `css` selector
 
 ## Chrome
 - use English version!
