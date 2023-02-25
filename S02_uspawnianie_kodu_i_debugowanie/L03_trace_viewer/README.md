@@ -132,6 +132,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
     ```
     package-lock.json
     playwright-report
+    test-results
 
     ```
 
