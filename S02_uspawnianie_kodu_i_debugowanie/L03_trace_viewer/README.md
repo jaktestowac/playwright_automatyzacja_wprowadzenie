@@ -79,7 +79,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
       video: {'retain-on-failure'},
   },
   ```
-- enable Trace Viewer on fial
+- enable Trace Viewer on fail
   ```javascript
   use: {
       trace: {'retain-on-failure'},
