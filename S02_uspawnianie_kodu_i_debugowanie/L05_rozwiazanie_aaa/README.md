@@ -145,5 +145,5 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - run Prettier  
   `npx prettier --write .`
 - additionaly you can install VSC extension: Prettier
-- to prevent empty changes after Prettier formatting
+- to prevent empty changes after Prettier formatting  
   `git config --global core.autocrlf false`
