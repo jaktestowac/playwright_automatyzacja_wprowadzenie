@@ -23,8 +23,8 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
   `npx playwright test --headed`
 - view report  
   `npx playwright show-report`
-- run Trace Viewer on zip file
-  `npx playwright show-trace trace.zip`
+- run Trace Viewer on zip file  
+  `npx playwright show-trace trace.zip`  
 
 ### Updating Playwright
 
@@ -53,6 +53,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - Cancelling Node process: hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Extract to variable: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
 - Move line i.e. up: <kbd>Alt</kbd> + <kbd>↑</kbd>
+- Show autocomplete suggestion: <kbd>Ctrl</kbd> + <kbd>Spacebar</kbd>
 
 ## Extensions
 
@@ -132,18 +133,18 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
     ```
     package-lock.json
     playwright-report
+    test-results
 
     ```
 
   - set rules in `.prettierrc.json`
     ```
     {
-        "singleQuote": true
+        "singleQuote": true,
+        "endOfLine": "auto"
     }
     ```
 
 - run Prettier  
   `npx prettier --write .`
-- additionaly you can install VSC extension: Prettier
-- to prevent empty changes after Prettier formatting
-  `git config --global core.autocrlf false`
+- additionaly you can install VSC extension: **Prettier**

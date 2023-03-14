@@ -126,4 +126,4 @@ if link is broken check https://jaktestowac.pl/lesson/pw1s01l01/
         ```
 - run Prettier  
 `npx prettier --write .`
-- additionaly you can install VSC extension: Prettier
+- additionaly you can install VSC extension: **Prettier**
