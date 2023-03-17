@@ -25,6 +25,8 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
   `npx playwright show-report`
 - run Trace Viewer on zip file  
   `npx playwright show-trace trace.zip`
+- run tests form exact file  
+  `npx playwright test tests/login.spec.ts`
 
 ### Updating Playwright
 
@@ -45,15 +47,20 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - Autosave: in File -> Auto Save
 - Timeline: file context menu -> Open Timeline
 - Formatting: editor -> context menu -> Format Document
+- Formatting shortcut: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>
 - Searching: editor -> <kbd>CTRL</kbd> + <kbd>F</kbd>
 - Accept hint in editor: <kbd>Enter</kbd>
 - Comment/Uncomment: <kbd>Ctrl</kbd> + <kbd>/</kbd>
 - Duplicate line: <kbd>Alt</kbd> + <kbd>Shift</kbd>
-- Use more than one terminal: <kbd>+</kbd> button in TERMINAL
-- Cancelling Node process: hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Extract to variable: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
 - Move line i.e. up: <kbd>Alt</kbd> + <kbd>↑</kbd>
 - Show autocomplete suggestion: <kbd>Ctrl</kbd> + <kbd>Spacebar</kbd>
+
+### Terminal (console)
+- Use more than one terminal: <kbd>+</kbd> button in TERMINAL
+- Cancelling Node process: hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
+- Open file: <kbd>Ctrl</kbd> + mouse click
+- Autocomplete: <kbd>Tab</kbd>
 
 ## Extensions
 
@@ -105,6 +112,11 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
     //your code
   });
   ```
+- hook beforeEach:
+  ```typescript
+  test.befoerEach('async ({ page }) => {
+    //your code
+  });
 - running given test: `test.only`
 
 ### Locators
