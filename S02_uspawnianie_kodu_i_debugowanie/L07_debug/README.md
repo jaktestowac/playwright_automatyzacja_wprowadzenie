@@ -57,10 +57,19 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - Show autocomplete suggestion: <kbd>Ctrl</kbd> + <kbd>Spacebar</kbd>
 
 ### Terminal (console)
-- Use more than one terminal: <kbd>+</kbd> button in TERMINAL
+
 - Cancelling Node process: hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Open file: <kbd>Ctrl</kbd> + mouse click
 - Autocomplete: <kbd>Tab</kbd>
+- Paste in terminal shortcuts:
+  - <kbd>Ctrl</kbd> + <kbd>V</kbd>
+  - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>
+  - <kbd>Shift</kbd> + <kbd>Insert</kbd>
+  - right mouse button
+- Use more than one terminal: <kbd>+</kbd> sign in TERMINAL
+- Use another terminal (Git Bash, JavaScript Debug): <kbd>˅</kbd> sign in TERMINAL
+
+To quickly evaluate code use `DEBUG CONSOLE`.
 
 ## Extensions
 
@@ -117,6 +126,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
   test.befoerEach('async ({ page }) => {
     //your code
   });
+  ```
 - running given test: `test.only`
 
 ### Locators
@@ -160,3 +170,16 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - run Prettier  
   `npx prettier --write .`
 - additionaly you can install VSC extension: **Prettier**
+
+### package.json example scripts
+
+- running single command:  
+  `"test": "npx playwright test",`
+- running with parameters:  
+  `"test:headed": "npx playwright test --headed",`
+- running other script with added parameters:  
+  `"test:pulpit:hd" : "npm run test tests/pulpit.spec.ts -- --headed"`
+
+In VSC in EXPLORER menu you can enable and use `NPM Scripts` similar to TIMELINE.
+
+Scripts can be run in standard and debug mode.
