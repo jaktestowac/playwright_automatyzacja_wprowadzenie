@@ -58,6 +58,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 
 ### Terminal (console)
 
+- Open: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>
 - Cancelling Node process: hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Open file: <kbd>Ctrl</kbd> + mouse click
 - Autocomplete: <kbd>Tab</kbd>
