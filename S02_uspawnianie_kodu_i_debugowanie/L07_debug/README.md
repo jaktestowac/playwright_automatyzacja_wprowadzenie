@@ -174,13 +174,14 @@ To quickly evaluate code use `DEBUG CONSOLE`.
 
 ### package.json example scripts
 
-- running single command:  
+- single command:  
   `"test": "npx playwright test",`
-- running with parameters:  
+- command with parameters:  
   `"test:headed": "npx playwright test --headed",`
-- running other script with added parameters:  
+- other script with added parameters:  
   `"test:pulpit:hd" : "npm run test tests/pulpit.spec.ts -- --headed"`
 
-In VSC in EXPLORER menu you can enable and use `NPM Scripts` similar to TIMELINE.
-
-Scripts can be run in standard and debug mode.
+Scripts can be run in standard and debug mode by:
+- hovering over script name and using opition **Run**
+- entering command `npm run script_name` i.e. `npm run test`
+- using `NPM Scripts` tab in **Explorer** view (need to be enabled in **EXPLORER** settings)
