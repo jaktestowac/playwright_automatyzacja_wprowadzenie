@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 import { loginData } from '../test-data/login.data';
-
 test.describe('Payment tests', () => {
   test.beforeEach(async ({ page }) => {
     const userId = loginData.userId;
@@ -10,14 +9,13 @@ test.describe('Payment tests', () => {
     await page.getByTestId('login-input').fill(userId);
     await page.getByTestId('password-input').fill(userPassword);
     await page.getByTestId('login-button').click();
-
     await page.getByRole('link', { name: 'płatności' }).click();
   });
 
   test('simple payment', async ({ page }) => {
-    // Arange
+    // Arrange
     const transferReceiver = 'Jan Nowak';
-    const transferAccount = '12 3456 7890 1234 5678 9012 3456-';
+    const transferAccount = '12 3456 7890 1234 5678 9012 34568';
     const transferAmount = '222';
     const expectedMessage = `Przelew wykonany! ${transferAmount},00PLN dla Jan Nowak`;
 
@@ -29,8 +27,6 @@ test.describe('Payment tests', () => {
     await page.getByTestId('close-button').click();
 
     // Assert
-    await expect(
-      page.getByRole('link', { name: expectedMessage })
-    ).toBeVisible();
+    await expect(page.locator('#show_messages')).toHaveText(expectedMessage);
   });
 });
