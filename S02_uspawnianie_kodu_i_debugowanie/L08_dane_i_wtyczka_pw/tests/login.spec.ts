@@ -38,7 +38,7 @@ test.describe('User login to Demobank', () => {
 
   test('unsuccessful login with too short password', async ({ page }) => {
     // Arrange
-    const userId = loginData.password;
+    const userId = loginData.userId;
     const incorrectPassword = '1234';
     const expectedErrorMessage = 'hasło ma min. 8 znaków';
 
