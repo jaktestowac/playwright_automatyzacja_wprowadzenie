@@ -45,11 +45,11 @@ test.describe('Pulpit tests', () => {
 
     // Act
     const pulpitPage = new PulpitPage(page)
-    await pulpitPage.topupReceiverInput.selectOption(topUpReceiver);
-    await pulpitPage.topupAmountInput.fill(topUpAmount);
-    await pulpitPage.topupAgreementCheckbox.click();
+    await pulpitPage.topUpReceiverInput.selectOption(topUpReceiver);
+    await pulpitPage.topUpAmountInput.fill(topUpAmount);
+    await pulpitPage.topUpAgreementCheckbox.click();
 
-    await pulpitPage.topupExecuteButton.click();
+    await pulpitPage.topUpExecuteButton.click();
     await pulpitPage.actionCloseButton.click();
 
     // Assert
@@ -65,11 +65,11 @@ test.describe('Pulpit tests', () => {
     const expectedBalance = Number(initialBalance) - Number(topUpAmount);
 
     // Act
-    await pulpitPage.topupReceiverInput.selectOption(topUpReceiver);
-    await pulpitPage.topupAmountInput.fill(topUpAmount);
-    await pulpitPage.topupAgreementCheckbox.click();
+    await pulpitPage.topUpReceiverInput.selectOption(topUpReceiver);
+    await pulpitPage.topUpAmountInput.fill(topUpAmount);
+    await pulpitPage.topUpAgreementCheckbox.click();
 
-    await pulpitPage.topupExecuteButton.click();
+    await pulpitPage.topUpExecuteButton.click();
     await pulpitPage.actionCloseButton.click();
 
     // Assert

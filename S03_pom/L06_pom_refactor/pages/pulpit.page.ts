@@ -12,12 +12,12 @@ export class PulpitPage {
 
   messageText = this.page.locator('#show_messages');
 
-  topupReceiverInput = this.page.locator('#widget_1_topup_receiver');
-  topupAmountInput = this.page.locator('#widget_1_topup_amount');
-  topupAgreementCheckbox = this.page.locator(
+  topUpReceiverInput = this.page.locator('#widget_1_topup_receiver');
+  topUpAmountInput = this.page.locator('#widget_1_topup_amount');
+  topUpAgreementCheckbox = this.page.locator(
     '#uniform-widget_1_topup_agreement span'
   );
-  topupExecuteButton = this.page.getByRole('button', {
+  topUpExecuteButton = this.page.getByRole('button', {
     name: 'doładuj telefon',
   });
 
