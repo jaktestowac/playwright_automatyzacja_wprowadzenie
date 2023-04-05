@@ -196,10 +196,11 @@ Scripts can be run in standard and debug mode by:
 
 ### Simple Page Object Model
 
-Simple implementation of Page Object Model can be based on *classes* that represents and implements tested pages.
-Those calsses contains *locatoers* of elements, that are used in tests, e.g. buttons, inputs etc.
+Simple implementation of Page Object Model can be based on _classes_ that represents and implements tested pages.
+Those calsses contains _locatoers_ of elements, that are used in tests, e.g. buttons, inputs etc.
 
 Directory structure:
+
 ```
 +-- Projects
 |   +-- pages
@@ -213,6 +214,7 @@ Directory structure:
 #### Page implementation
 
 Simple implementation of login page in `./pages/login.page.ts`:
+
 ```
 import { Page } from '@playwright/test';
 
@@ -222,6 +224,12 @@ export class LoginPage {
   loginInput = this.page.getByTestId('login-input');
   passwordInput = this.page.getByTestId('password-input');
   loginButton = this.page.getByTestId('login-button');
+
+  async login(userId: string, userPassword:string): Promise<void> {
+    await this.loginInput.fill(userId)
+    await this.passwordInput.fill(userPassword)
+    await this.loginButton.click()
+  }
 }
 
 ```
@@ -229,14 +237,15 @@ export class LoginPage {
 #### Usage in tests
 
 First import of selected page:
+
 ```
 import { LoginPage } from '../pages/login.page';
 ```
+
 Then use page in tests:
+
 ```
     // Act
     const loginPage = new LoginPage(page)
-    await loginPage.loginInput.fill(userId)
-    await loginPage.passwordInput.fill(userPassword)
-    await loginPage.loginButton.click()
+    await loginPage.login(userId, userPassword)
 ```
