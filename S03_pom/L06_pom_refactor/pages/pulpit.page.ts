@@ -22,5 +22,5 @@ export class PulpitPage {
   });
 
   moneyValueText = this.page.locator('#money_value');
-  userNameText = this.page.getByTestId('user-name')
+  userNameText = this.page.getByTestId('user-name');
 }

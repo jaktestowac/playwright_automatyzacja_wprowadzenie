@@ -8,11 +8,10 @@ test.describe('Payment tests', () => {
     const userPassword = loginData.userPassword;
 
     await page.goto('/');
-    const loginPage = new LoginPage(page)
-    await loginPage.loginInput.fill(userId)
-    await loginPage.passwordInput.fill(userPassword)
-    await loginPage.loginButton.click()
-
+    const loginPage = new LoginPage(page);
+    await loginPage.loginInput.fill(userId);
+    await loginPage.passwordInput.fill(userPassword);
+    await loginPage.loginButton.click();
 
     await page.getByRole('link', { name: 'płatności' }).click();
   });

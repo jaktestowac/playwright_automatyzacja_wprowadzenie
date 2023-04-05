@@ -1,5 +1,5 @@
 export class SideMenuComponent {
-    constructor(private page) { }
+  constructor(private page) {}
 
-    paymentLink = this.page.getByRole('link', { name: 'płatności' })
+  paymentLink = this.page.getByRole('link', { name: 'płatności' });
 }

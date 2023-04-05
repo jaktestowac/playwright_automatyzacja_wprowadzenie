@@ -34,9 +34,7 @@ test.describe('User login to Demobank', () => {
     await loginPage.passwordInput.click();
 
     // Assert
-    await expect(loginPage.loginError).toHaveText(
-      expectedErrorMessage
-    );
+    await expect(loginPage.loginError).toHaveText(expectedErrorMessage);
   });
 
   test('unsuccessful login with too short password', async ({ page }) => {
@@ -52,8 +50,6 @@ test.describe('User login to Demobank', () => {
     await loginPage.passwordInput.blur();
 
     // Assert
-    await expect(loginPage.passwordError).toHaveText(
-      expectedErrorMessage
-    );
+    await expect(loginPage.passwordError).toHaveText(expectedErrorMessage);
   });
 });

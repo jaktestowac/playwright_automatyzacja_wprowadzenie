@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Pulpi tests', () => {
-
   test('quick payment with correct data', async ({ page }) => {
     await page.goto('https://demo-bank.vercel.app/');
     await page.getByTestId('login-input').fill('testerLO');
@@ -15,7 +14,9 @@ test.describe('Pulpi tests', () => {
     await page.getByRole('button', { name: 'wykonaj' }).click();
     await page.getByTestId('close-button').click();
 
-    await expect(page.locator('#show_messages')).toHaveText('Przelew wykonany! Chuck Demobankowy - 150,00PLN - pizza')
+    await expect(page.locator('#show_messages')).toHaveText(
+      'Przelew wykonany! Chuck Demobankowy - 150,00PLN - pizza'
+    );
   });
 
   test('successful mobile top-up', async ({ page }) => {
@@ -30,6 +31,8 @@ test.describe('Pulpi tests', () => {
     await page.getByRole('button', { name: 'doładuj telefon' }).click();
     await page.getByTestId('close-button').click();
 
-    await expect(page.locator('#show_messages')).toHaveText('Doładowanie wykonane! 50,00PLN na numer 503 xxx xxx')
+    await expect(page.locator('#show_messages')).toHaveText(
+      'Doładowanie wykonane! 50,00PLN na numer 503 xxx xxx'
+    );
   });
 });

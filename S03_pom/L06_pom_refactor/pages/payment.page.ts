@@ -10,5 +10,5 @@ export class PaymentPage {
   transferButton = this.page.getByRole('button', { name: 'wykonaj przelew' });
   actionCloseButton = this.page.getByTestId('close-button');
 
-  messageText = this.page.locator('#show_messages')
+  messageText = this.page.locator('#show_messages');
 }
