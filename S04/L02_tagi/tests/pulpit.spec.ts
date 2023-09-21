@@ -25,7 +25,7 @@ test.describe('Pulpit tests', () => {
     const transferAmount = '150';
     const transferTitle = 'pizza';
     const expectedTransferReceiver = 'Chuck Demobankowy';
-    expect(false).toBeTruthy();
+    
     // Act
     await pulpitPage.executeQuickPayment(
       receiverId,
