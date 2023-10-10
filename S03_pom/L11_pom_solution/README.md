@@ -54,8 +54,6 @@ The tested page is a simple demo of a bank.
 - Preview: for README.md
 - Autosave: in File -> Auto Save
 - Timeline: file context menu -> Open Timeline
-- Formatting: editor -> context menu -> Format Document
-- Formatting shortcut: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>
 - Searching: editor -> <kbd>CTRL</kbd> + <kbd>F</kbd>
 - Accept hint in editor: <kbd>Enter</kbd>
 - Comment/Uncomment: <kbd>Ctrl</kbd> + <kbd>/</kbd>
@@ -63,11 +61,19 @@ The tested page is a simple demo of a bank.
 - Extract to variable: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
 - Move line i.e. up: <kbd>Alt</kbd> + <kbd>↑</kbd>
 - Show autocomplete suggestion: <kbd>Ctrl</kbd> + <kbd>Spacebar</kbd>
-- Format code on save:
+- Formatting: editor -> context menu -> Format Document
+- Formatting shortcut: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>
+- Format code on save: 
   - Top menu: View -> Open Command Palette
   - Type: user settings - chose `Preferences: Open User Settings`
   - Search: format on save
   - Edit: check `Editor Format On Save`
+- Reload Window: 
+  - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+  - Find and use: `Developer: Reload Window`
+- Rename in opened files: <kbd>F2</kbd>
+- Show quick fix: <kbd>Ctrl</kbd> + </kbd>.</kbd>
+- Creating a new variable: Refactor <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> -> Extract to constant in enclosing scope
 
 ### Terminal (console)
 

@@ -65,6 +65,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
   - Find and use: `Developer: Reload Window`
 - Rename in opened files: <kbd>F2</kbd>
 - Show quick fix: <kbd>Ctrl</kbd> + </kbd>.</kbd>
+- Creating a new variable: Refactor <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> -> Extract to constant in enclosing scope
 
 ### Terminal (console)
 

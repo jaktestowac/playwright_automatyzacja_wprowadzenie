@@ -54,6 +54,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - Extract to variable: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
 - Move line i.e. up: <kbd>Alt</kbd> + <kbd>↑</kbd>
 - Show autocomplete suggestion: <kbd>Ctrl</kbd> + <kbd>Spacebar</kbd>
+- Creating a new variable: Refactor <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> -> Extract to constant in enclosing scope
 
 ## Extensions
 

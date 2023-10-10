@@ -36,6 +36,7 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Use more than one terminal: <kbd>+</kbd> button in TERMINAL
 - Extract to variable: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
 - Move line i.e. up: <kbd>Alt</kbd> + <kbd>↑</kbd>
+- Creating a new variable: Refactor <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> -> Extract to constant in enclosing scope
 
 ## Plugins
 - GitLens - view details of your repository i.e. commits history
