@@ -48,7 +48,7 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - Searching: editor -> <kbd>CTRL</kbd> + <kbd>F</kbd>
 - Accept hint in editor: <kbd>Enter</kbd>
 - Comment/Uncomment: <kbd>Ctrl</kbd> + <kbd>/</kbd>
-- Duplicate line: <kbd>Alt</kbd> + <kbd>Shift</kbd>
+- Duplicate line: <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>
 - Use more than one terminal: <kbd>+</kbd> button in TERMINAL
 - Cancelling Node process: hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Extract to variable: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
