@@ -1,5 +1,9 @@
-export class SideMenuComponent {
-  constructor(private page) {}
+import { Locator, Page } from '@playwright/test';
 
-  paymentLink = this.page.getByRole('link', { name: 'płatności' });
+export class SideMenuComponent {
+  paymentLink: Locator;
+
+  constructor(private page: Page) {
+    this.paymentLink = this.page.getByRole('link', { name: 'płatności' });
+  }
 }

@@ -1,36 +1,57 @@
-import { Page } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 import { SideMenuComponent } from '../component/side-menu.component';
 
 export class PulpitPage {
-  constructor(private page: Page) {}
+  transferReceiverInput: Locator;
+  transferAmountInput: Locator;
+  transferTitleInput: Locator;
 
-  sideMenuComponent = new SideMenuComponent(this.page);
+  transferButton: Locator;
+  actionCloseButton: Locator;
 
-  transferReceiverInput = this.page.locator('#widget_1_transfer_receiver');
-  transferAmountInput = this.page.locator('#widget_1_transfer_amount');
-  transferTitleInput = this.page.locator('#widget_1_transfer_title');
+  messageText: Locator;
 
-  transferButton = this.page.getByRole('button', { name: 'wykonaj' });
-  actionCloseButton = this.page.getByTestId('close-button');
+  topUpReceiverInput: Locator;
+  topUpAmountInput: Locator;
+  topUpAgreementCheckbox: Locator;
+  topUpExecuteButton: Locator;
 
-  messageText = this.page.locator('#show_messages');
+  moneyValueText: Locator;
+  userNameText: Locator;
 
-  topUpReceiverInput = this.page.locator('#widget_1_topup_receiver');
-  topUpAmountInput = this.page.locator('#widget_1_topup_amount');
-  topUpAgreementCheckbox = this.page.locator(
-    '#uniform-widget_1_topup_agreement span'
-  );
-  topUpExecuteButton = this.page.getByRole('button', {
-    name: 'doładuj telefon',
-  });
+  sideMenuComponent: SideMenuComponent;
 
-  moneyValueText = this.page.locator('#money_value');
-  userNameText = this.page.getByTestId('user-name');
+  constructor(private page: Page) {
+    this.transferReceiverInput = this.page.locator(
+      '#widget_1_transfer_receiver',
+    );
+    this.transferAmountInput = this.page.locator('#widget_1_transfer_amount');
+    this.transferTitleInput = this.page.locator('#widget_1_transfer_title');
+
+    this.transferButton = this.page.getByRole('button', { name: 'wykonaj' });
+    this.actionCloseButton = this.page.getByTestId('close-button');
+
+    this.messageText = this.page.locator('#show_messages');
+
+    this.topUpReceiverInput = this.page.locator('#widget_1_topup_receiver');
+    this.topUpAmountInput = this.page.locator('#widget_1_topup_amount');
+    this.topUpAgreementCheckbox = this.page.locator(
+      '#uniform-widget_1_topup_agreement span',
+    );
+    this.topUpExecuteButton = this.page.getByRole('button', {
+      name: 'doładuj telefon',
+    });
+
+    this.moneyValueText = this.page.locator('#money_value');
+    this.userNameText = this.page.getByTestId('user-name');
+
+    this.sideMenuComponent = new SideMenuComponent(this.page);
+  }
 
   async executeQuickPayment(
     receiverId: string,
     transferAmount: string,
-    transferTitle: string
+    transferTitle: string,
   ): Promise<void> {
     await this.transferReceiverInput.selectOption(receiverId);
     await this.transferAmountInput.fill(transferAmount);
@@ -42,7 +63,7 @@ export class PulpitPage {
 
   async executeMobileTopUp(
     topUpReceiver: string,
-    topUpAmount: string
+    topUpAmount: string,
   ): Promise<void> {
     await this.topUpReceiverInput.selectOption(topUpReceiver);
     await this.topUpAmountInput.fill(topUpAmount);
