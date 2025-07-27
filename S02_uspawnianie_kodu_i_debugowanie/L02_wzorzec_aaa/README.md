@@ -32,10 +32,11 @@ hit twice <kbd>Ctrl</kbd> + <kbd>C</kbd>
 - Searching: editor -> <kbd>CTRL</kbd> + <kbd>F</kbd>
 - Accept hint in editor: <kbd>Enter</kbd>
 - Comment/Uncomment: <kbd>Ctrl</kbd> + <kbd>/</kbd>
-- Duplicate line: <kbd>Alt</kbd> + <kbd>Shift</kbd>
+- Duplicate line: <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>
 - Use more than one terminal: <kbd>+</kbd> button in TERMINAL
 - Extract to variable: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
 - Move line i.e. up: <kbd>Alt</kbd> + <kbd>↑</kbd>
+- Creating a new variable: Refactor <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> -> Extract to constant in enclosing scope
 
 ## Plugins
 - GitLens - view details of your repository i.e. commits history

@@ -1,9 +1,13 @@
-import { Page } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 
 export class LoginPage {
-  constructor(private page: Page) {}
+  loginInput: Locator;
+  passwordInput: Locator;
+  loginButton: Locator;
 
-  loginInput = this.page.getByTestId('login-input');
-  passwordInput = this.page.getByTestId('password-input');
-  loginButton = this.page.getByTestId('login-button');
+  constructor(private page: Page) {
+    this.loginInput = this.page.getByTestId('login-input');
+    this.passwordInput = this.page.getByTestId('password-input');
+    this.loginButton = this.page.getByTestId('login-button');
+  }
 }

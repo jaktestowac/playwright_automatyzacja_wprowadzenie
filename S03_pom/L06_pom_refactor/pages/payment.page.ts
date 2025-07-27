@@ -1,14 +1,23 @@
-import { Page } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 
 export class PaymentPage {
-  constructor(private page: Page) {}
+  transferReceiverInput: Locator;
+  transferToInput: Locator;
+  transferAmountInput: Locator;
 
-  transferReceiverInput = this.page.getByTestId('transfer_receiver');
-  transferToInput = this.page.getByTestId('form_account_to');
-  transferAmountInput = this.page.getByTestId('form_amount');
+  transferButton: Locator;
+  actionCloseButton: Locator;
 
-  transferButton = this.page.getByRole('button', { name: 'wykonaj przelew' });
-  actionCloseButton = this.page.getByTestId('close-button');
+  messageText: Locator;
 
-  messageText = this.page.locator('#show_messages');
+  constructor(private page: Page) {
+    this.transferReceiverInput = this.page.getByTestId('transfer_receiver');
+    this.transferToInput = this.page.getByTestId('form_account_to');
+    this.transferAmountInput = this.page.getByTestId('form_amount');
+
+    this.transferButton = this.page.getByRole('button', { name: 'wykonaj przelew' });
+    this.actionCloseButton = this.page.getByTestId('close-button');
+
+    this.messageText = this.page.locator('#show_messages');
+  }
 }

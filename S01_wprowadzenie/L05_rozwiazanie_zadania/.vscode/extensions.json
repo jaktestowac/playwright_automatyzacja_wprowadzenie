@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-playwright.playwright",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "pkief.material-icon-theme",
+    "jaktestowac-pl.playwright-helpers",
+    "jaktestowac-pl.vsc-playwright-snippets",
+    "jaktestowac-pl.vsc-playwright-snippets-ui",
+  ]
+}

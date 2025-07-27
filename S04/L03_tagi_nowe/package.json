@@ -1,0 +1,24 @@
+{
+  "name": "demo-bank-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:pulpit:headed": "npm run test tests/pulpit.spec.ts -- --headed",
+    "test:headed": "npx playwright test --headed",
+    "test:smoke": "npx playwright test --grep \"@smoke\"",
+    "test:integration": "npx playwright test --grep \"@integration\"",
+    "test:pulpit": "npx playwright test --grep \"@pulpit\"",
+    "test:payment": "npx playwright test --grep \"@payment\"",
+    "test:login": "npx playwright test --grep \"@login\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.7.7",
+    "prettier": "2.8.4"
+  }
+}

@@ -1,19 +1,30 @@
-import { Page } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 import { SideMenuComponent } from '../component/side-menu.component';
 
 export class PaymentPage {
-  constructor(private page: Page) {}
+  transferReceiverInput: Locator;
+  transferToInput: Locator;
+  transferAmountInput: Locator;
 
-  sideMenuComponent = new SideMenuComponent(this.page);
+  transferButton: Locator;
+  actionCloseButton: Locator;
 
-  transferReceiverInput = this.page.getByTestId('transfer_receiver');
-  transferToInput = this.page.getByTestId('form_account_to');
-  transferAmountInput = this.page.getByTestId('form_amount');
+  messageText: Locator;
+  
+  sideMenuComponent: SideMenuComponent;
 
-  transferButton = this.page.getByRole('button', { name: 'wykonaj przelew' });
-  actionCloseButton = this.page.getByTestId('close-button');
+  constructor(private page: Page) {
+    this.transferReceiverInput = this.page.getByTestId('transfer_receiver');
+    this.transferToInput = this.page.getByTestId('form_account_to');
+    this.transferAmountInput = this.page.getByTestId('form_amount');
 
-  messageText = this.page.locator('#show_messages');
+    this.transferButton = this.page.getByRole('button', { name: 'wykonaj przelew' });
+    this.actionCloseButton = this.page.getByTestId('close-button');
+
+    this.messageText = this.page.locator('#show_messages');
+    
+    this.sideMenuComponent = new SideMenuComponent(this.page);
+  }
 
   async makeTransfer(transferReceiver: string, transferAccount: string, transferAmount: string): Promise<void> {
     await this.transferReceiverInput.fill(transferReceiver);
